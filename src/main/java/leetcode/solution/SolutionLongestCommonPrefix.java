@@ -1,3 +1,5 @@
+package main.java.leetcode.solution;
+
 public class SolutionLongestCommonPrefix {
     public String longestCommonPrefix(String[] strs) {
         StringBuilder sb = new StringBuilder();

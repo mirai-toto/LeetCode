@@ -1,6 +1,8 @@
+package main.java.leetcode.solution;
+
 import java.util.HashMap;
 
-class SolutionTwoSum {
+public class SolutionTwoSum {
     public int[] twoSum(int[] nums, int target) {
         HashMap<Integer, Integer> map = new HashMap<>();
         for (int i = 0; i < nums.length; i++) {
@@ -9,7 +11,7 @@ class SolutionTwoSum {
             }
             map.put(target - nums[i], i);
         }
-        return null;
+        return new int[0];
     }
 
     public int[] twoSumSlow(int[] nums, int target) {
@@ -20,7 +22,7 @@ class SolutionTwoSum {
                 }
             }
         }
-        return null;
+        return new int[0];
     }
 
     public int[] twoSumThomas(int[] nums, int target) {

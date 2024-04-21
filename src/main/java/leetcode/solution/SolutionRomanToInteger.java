@@ -1,21 +1,13 @@
+package main.java.leetcode.solution;
+
 import org.jetbrains.annotations.NotNull;
 
 import java.util.HashMap;
 import java.util.Map;
 
+import static main.java.leetcode.utils.RomanToIntegerUtils.getRomanNumeralValue;
+
 public class SolutionRomanToInteger {
-    public int getRomanNumeralValue(char roman) {
-        return switch (roman) {
-            case 'I' -> 1;
-            case 'V' -> 5;
-            case 'X' -> 10;
-            case 'L' -> 50;
-            case 'C' -> 100;
-            case 'D' -> 500;
-            case 'M' -> 1000;
-            default -> 0;
-        };
-    }
 
     // This function handles IIIX as 7 and IIIIX as 6
     public int romanToInt(@NotNull String s) {
@@ -23,7 +15,6 @@ public class SolutionRomanToInteger {
         int count = 0;
 
         int previousValue = getRomanNumeralValue(s.charAt(0));
-        ;
         int currentValue;
 
         for (int i = 0; i < s.length(); i++) {
@@ -60,11 +51,10 @@ public class SolutionRomanToInteger {
 
         for (int i = 0; i < s.length(); i++) {
             // Current number is not the last, and next number is actually bigger than current number, so we subtract
-            if (i < s.length() - 1 && romanValues.get(s.charAt(i)) < romanValues.get(s.charAt(i + 1))) {
+            if (i < s.length() - 1 && romanValues.get(s.charAt(i)) < romanValues.get(s.charAt(i + 1)))
                 ans -= romanValues.get(s.charAt(i));
-            } else {
+            else
                 ans += romanValues.get(s.charAt(i));
-            }
         }
         return ans;
     }

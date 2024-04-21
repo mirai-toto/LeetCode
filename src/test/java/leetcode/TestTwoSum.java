@@ -1,3 +1,6 @@
+package test.java.leetcode;
+
+import main.java.leetcode.solution.SolutionTwoSum;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -40,6 +43,7 @@ public class TestTwoSum {
         this.target = this.nums[firstMaxIndex] + this.nums[secondMaxIndex];
         System.out.println(STR."First number : \{this.nums[firstMaxIndex]}; Second number \{this.nums[secondMaxIndex]}");
     }
+
     @Before
     public void setUp() throws Exception {
         this.twoSum = new SolutionTwoSum()::twoSum;

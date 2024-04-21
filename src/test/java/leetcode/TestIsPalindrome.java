@@ -1,15 +1,12 @@
-import org.junit.jupiter.api.BeforeEach;
+package test.java.leetcode;
+
+import main.java.leetcode.solution.SolutionIsPalindrome;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 class TestIsPalindrome {
-    private SolutionIsPalindrome solutionIsPalindrome;
-
-    @BeforeEach
-    void setUp() {
-        this.solutionIsPalindrome = new SolutionIsPalindrome();
-    }
+    private final SolutionIsPalindrome solutionIsPalindrome = new SolutionIsPalindrome();
 
     @Test
     void test1() {
