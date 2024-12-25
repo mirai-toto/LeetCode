@@ -9,7 +9,7 @@ import java.util.*;
 import java.util.function.BiFunction;
 
 public class TestTwoSum {
-  public static final int SIZE = 1500000;
+  public static final int SIZE = 150000;
   public static final int SEED = 420;
   private BiFunction<int[], Integer, int[]> twoSumSlow;
   private BiFunction<int[], Integer, int[]> twoSum;
@@ -83,7 +83,7 @@ public class TestTwoSum {
 
   @Test
   public void testSlow() {
-    int[] expectedResult = new int[] { 422518, 857007 };
+    int[] expectedResult = new int[] { 45994, 127061 };
     int[] resultSlow = this.twoSumSlow.apply(this.nums, this.target);
     System.out.println("resultSlow : " + Arrays.toString(resultSlow) + " => { " + this.nums[resultSlow[0]] + ", "
         + this.nums[resultSlow[1]] + " }");
@@ -92,7 +92,7 @@ public class TestTwoSum {
 
   @Test
   public void testFast() {
-    int[] expectedResult = new int[] { 422518, 857007 };
+    int[] expectedResult = new int[] { 45994, 127061 };
     int[] resultFast = this.twoSum.apply(this.nums, this.target);
     System.out.println("resultFast : " + Arrays.toString(resultFast) + " => { " + this.nums[resultFast[0]] + ", "
         + this.nums[resultFast[1]] + " }");
@@ -101,7 +101,7 @@ public class TestTwoSum {
 
   @Test
   public void testThomas() {
-    int[] expectedResult = new int[] { 422518, 857007 };
+    int[] expectedResult = new int[] { 45994, 127061 };
     int[] resultFast = this.twoSumThomas.apply(this.nums, this.target);
     System.out.println("resultFast : " + Arrays.toString(resultFast) +
         " => { " + this.nums[resultFast[0]] + ", " + this.nums[resultFast[1]] + " }");

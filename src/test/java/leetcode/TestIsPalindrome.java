@@ -28,6 +28,6 @@ class TestIsPalindrome {
     assertTrue(solutionIsPalindrome.isPalindromeFast(747));
     assertTrue(solutionIsPalindrome.isPalindromeFast(7487847));
     assertTrue(solutionIsPalindrome.isPalindromeFast(0));
-    assertTrue(solutionIsPalindrome.isPalindromeFast(10));
+    assertTrue(solutionIsPalindrome.isPalindromeFast(101));
   }
 }
