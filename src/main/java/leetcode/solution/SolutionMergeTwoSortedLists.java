@@ -1,6 +1,6 @@
-package main.java.leetcode.solution;
+package leetcode.solution;
 
-import main.java.leetcode.common.ListNode;
+import leetcode.common.ListNode;
 
 public class SolutionMergeTwoSortedLists {
 

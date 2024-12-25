@@ -1,4 +1,4 @@
-package main.java.leetcode.utils;
+package leetcode.utils;
 
 public class RomanToIntegerUtils {
     public static int getRomanNumeralValue(char roman) {

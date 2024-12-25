@@ -1,4 +1,4 @@
-package main.java.leetcode.solution;
+package leetcode.solution;
 
 public class SolutionRemoveElement {
     public int removeElementShort(int[] nums, int val) {

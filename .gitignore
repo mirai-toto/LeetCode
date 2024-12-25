@@ -26,3 +26,9 @@ replay_pid*
 out/
 LeetCode.iml
 .idea
+
+target/
+.settings/
+
+.classpath
+.project

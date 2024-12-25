@@ -1,4 +1,4 @@
-package main.java.leetcode.utils;
+package leetcode.utils;
 
 import java.util.stream.Stream;
 

@@ -1,4 +1,4 @@
-package main.java.leetcode.solution;
+package leetcode.solution;
 
 import java.util.*;
 
